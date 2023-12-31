@@ -1,0 +1,164 @@
+import './App.css'
+import logo from './asset/download.jpg'
+import fb from './asset/fb.avif'
+import wts from './asset/wts.avif'
+import ubr from './asset/ubr.png'
+
+function App() {
+  return (
+    <div className='grid grid-col-12'>
+      {/* Header */}
+      <div className='col-span-12 h-[12vh] bg-gray-300 '>
+        {/* <h1 className=" justify-center p-5 bg-yellow-300 w-4/12 h-[2vh] m-auto rounded text-center "> TO DO APPLICATION</h1> */}
+        <div className='  h-full flex  justify-between items-center   '>
+          <div className=' bg-sky-500 '>
+            <img src={logo} alt='Logo' className='h-12' />
+          </div>
+          <div className=' w-full text-lg font-semibold bg-sky-500   rounded flex  justify-between items-center  '>
+            <div>
+              <h1 className='p-3 ml-16 text-white hover:bg-red-500 rounded transition-all duration-1000 text-center text-2xl italic font-serif'>
+                TO DO APPLICATION
+              </h1>
+            </div>
+            <div className='flex gap-3 mr-6'>
+              <button
+                type='submit'
+                class='text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+              >
+                About
+              </button>
+              <button
+                type='submit'
+                class='text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+              >
+                Contact
+              </button>
+            </div>
+          </div>
+          <div className=''>
+
+          </div>
+        </div>
+      </div>
+      {/* Sidebar */}
+      <div className='col-span-1 h-[75vh] bg-blue-400'>
+        <div className=' '>
+          <p className='text-center text-amber-300 font-serif text-lg pt-10  '>
+            Activities List
+          </p>
+        </div>
+        <br />
+        <div className=''>
+          <button
+            type='text'
+            className='w-full h-full text-lg hover:bg-amber-400 text-white rounded p-3 border'
+          >
+            Add Task
+          </button>
+          <button
+            type='text'
+            className='w-full h-full text-lg hover:bg-amber-400 text-white rounded p-3 border '
+          >
+            Show Task
+          </button>
+        </div>
+      </div>
+      {/* Content article text wrap */}
+      {/* <div className='col-span-10 h-[75vh]'>
+        <div className='m-4 p-4 text-wrap'>
+          <h1 className='text-xl text-rose-500 '>What is To Do Application?</h1>
+          <p className='text-start text-purple-700 m-4 p-4'>
+            To do list application is a list of tasks you need to complete or
+            things that you want to do. Most typically, they’re organised in
+            order of priority. Traditionally, they’re written on a piece of
+            paper or post it notes and act as a memory aid. As technology has
+            evolved we have been able to create a todo lists with excel
+            spreadsheets, word documents, email lists, todo list apps, Microsoft
+            to do and google to do list to name a few. You can use a to do list
+            in your home and personal life, or in the workplace. Having a list
+            of everything you need to do written down in one place means you
+            shouldn’t forget anything important. By prioritising the tasks in
+            the list you plan the order in which you’re going to do them and can
+            quickly see what needs your immediate attention and what tasks you
+            can leave until a little later.
+          </p>
+        </div>
+      </div> 
+      About Page / Home */}
+
+      {/* <div className='col-span-10 h-[75vh]'>
+        <div className='grid grid-cols-6 gap-4 mt-20 '>
+          <div className='col-start-3 col-span-4 grid gap-4'>
+            <div className=''>
+              <h1 className=' text-2xl italic '>Add Different Task Here</h1>
+            </div>
+            <div className=''>
+              <input
+                class='placeholder-red-300 border border-blue-400 text-center rounded p-4 '
+                placeholder='Please Insert Task'
+              />
+            </div>
+          </div>
+          <div className='col-start-3 col-end-7'>
+            <button
+              type='submit'
+              class='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div> AddTask Page
+       */}
+
+      {/* <div className='col-span-10 h-[75vh]'>
+        <div className='grid grid-cols-6 gap-2 bg-indigo-200 rounded m-3'>
+          <h1 className='grid col-start-3 mt-4  text-center rounded p-2 m-2 '>
+            All Listed Tasked
+          </h1>
+        </div>
+        <div className='grid grid-cols-6 gap-4 m-4 p-4 bg-gray-300  rounded '>
+          <div class='col-start-3 col-span-4 '>Task 01</div>
+          <div class='col-start-3 col-span-4 '>Task 02</div>
+          <div class='col-start-3 col-span-4 '>Task 03</div>
+          <div class='col-start-3 col-span-4 '>Task 04</div>
+        </div>
+      </div> 
+      Show Task  */}
+      
+{/* 
+      <div className='col-span-10 h-[75vh]'>
+        <div className='m-4 mt-10 p-4 text-wrap'>
+          <h1 className='text-2xl text-rose-500 text-center font-bold '>
+            Contact
+          </h1>
+          <p className='text-start text-purple-700 m-4 p-4'>
+            Please Contact With the System admin for further Communication. This
+            page is solely under construction & all rights are reserved by
+            Innovexa Solution.
+          </p>
+          <h2 className='text-center'> Phone: +8801723456654</h2>
+          <h3 className='text-center'> Email: cba@gmail.com </h3>
+        </div>
+      </div> */}
+
+      {/* Footer */}
+      <div className='col-span-12 h-[13vh] bg-gray-400'>
+        <div className='flex flex-row'>
+          <div className=' basis-1/4 flex justify-between  items-center'>
+            <img src={fb} alt='Logo' className='h-12 m-auto p-2' />
+            <img src={wts} alt='Logo' className='h-12 m-auto p-2 ' />
+            <img src={ubr} alt='Logo' className='h-12 m-auto p-2' />
+          </div>
+          <div className='basis-3/4 p-3'>
+            <p className='text-start text-purple-700 p-3  text-xl text '>
+              © 2024 Innovexa Solution, Inc. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default App
